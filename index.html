@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Викторина – проверь свой уровень знаний!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Кнопка для старта -->
+    <div class="start_btn"><button>Начать викторину</button></div>
+    <!-- Информационный блок -->
+    <div class="info_box">
+      <div class="info-title"><span>Правила прохождения викторины</span></div>
+      <div class="info-list">
+        <div class="info">1. На каждый вопрос дается <span>15 секунд</span> времени.</div>
+        <div class="info">2. Ответ можно выбрать только один раз.</div>
+        <div class="info">
+          3. После того как время истекло, Вы не сможете выбрать какой-либо вариант ответа.
+        </div>
+        <div class="info">4. Вы не сможете выйти из викторины во время ее прохождения.</div>
+        <div class="info">
+          5. После прохождения викторины будут известны результаты полученных Вами баллов.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Выйти</button>
+        <button class="restart">Далее</button>
+      </div>
+    </div>
+    <!-- Викторина -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Проверь свой уровень знаний!</div>
+        <div class="timer">
+          <div class="time_left_txt">Время:</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text">
+          <!-- Здесь будет текст с вопросом -->
+        </div>
+        <div class="option_list">
+          <!-- Здесь будут варианты ответов -->
+        </div>
+      </section>
+      <!-- Футер -->
+      <footer>
+        <div class="total_que">
+          <!-- Здесь будет номер вопроса -->
+        </div>
+        <button class="next_btn">Следующий вопрос</button>
+      </footer>
+    </div>
+    <!-- Результаты -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">Вы завершили викторину!</div>
+      <div class="score_text">
+        <!-- Здесь будут результаты викторины -->
+      </div>
+      <div class="buttons">
+        <button class="restart">Пройти снова</button>
+        <button class="quit">Выйти</button>
+      </div>
+    </div>
+    <!-- JS-файл с вопросами и вариантами ответов -->
+    <script src="./questions.js"></script>
+    <!-- JS-файл с логикой викторины -->
+    <script src="./script.js"></script>
+  </body>
+</html>
